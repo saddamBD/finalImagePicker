@@ -35,6 +35,9 @@ class ViewController: UIViewController,ImagePickerDelegate {
         
     }
 
+    
+    
+    
     func wrapperDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
         guard images.count > 0 else { return }
         
@@ -46,10 +49,15 @@ class ViewController: UIViewController,ImagePickerDelegate {
         imagePicker.present(lightbox, animated: true, completion: nil)
     }
     
+    
+    
     func doneButtonDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
         imagePicker.dismiss(animated: true, completion: nil)
 
     }
+    
+    
+    
     
     func cancelButtonDidPress(_ imagePicker: ImagePickerController) {
         imagePicker.dismiss(animated: true, completion: nil)
